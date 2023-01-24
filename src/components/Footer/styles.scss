@@ -1,0 +1,49 @@
+@import '../../variables';
+
+.footer {
+    width: 100%;
+    padding: 6rem 0;
+
+    &__container {
+        max-width: 1140px;
+        margin: auto;
+        gap: 40px;
+    }
+
+    &__center {
+        height: 100%;
+        max-width: 100%;
+        padding: 1rem;
+        display: inline;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &__social {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+
+    }
+}
+
+h4 {
+    font-size: 1rem;
+    padding-bottom: 0.7rem;
+
+    &:hover {
+        color: $green !important;
+    }
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+    }
+}
